@@ -12,34 +12,34 @@ document.getElementById("formAdocao").addEventListener("submit", function (e){
 
     if(nome.length < 3){
     alert("Nome inválido");
-    return 0;   
+    return;   
     } 
 
     if (idade < 18) {
         alert("Você tem que ter 18 para adotar ou até mais");
-        return 0;
+        return;
     }
 
     if (cpfCadastrado.includes(CPF)) {
         alert("Este CPF já possui uma solicitação no nosso sistema");
-        return 0;
+        return;
     }
 
     if (moradia === "apartamento" && quintal === "sim"){
-        alert("Erro apartamentos não possuem quintal externo")
-        return 0;
+        alert("Erro: apartamentos não possuem quintal externo")
+        return;
     }
 
     if (horas > 8){
         const justifica = prompt("O animal fica mais de 8h sozinho. Como você lida com isso? (Justificativa obrigatória)")
         if (!justifica || justifica.length < 10){
-            alert ("Adoção bloqueada: por insuficiencia de informação")
-            return 0;
+            alert ("Adoção bloqueada: justificativa insuficiente")
+            return;
         }
     }
 
 
 
-    document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome: "
+   document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome: "
     + nome;
 });
