@@ -60,7 +60,7 @@ document.getElementById("formAdocao").addEventListener("submit", function (e) {
     resultadoDiv.style.textAlign = "center";
     
     resultadoDiv.innerHTML = `
-        <h3>✅ Cadastro realizado com sucesso!</h3>
+        <h3>Cadastro realizado com sucesso!</h3>
         <p><strong>Nome:</strong> ${nome}</p>
         <p>Sua solicitação para adotar o Golden foi enviada!</p>
         <p>Nossa equipe entrará em contato em breve.</p>
