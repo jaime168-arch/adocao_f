@@ -1,4 +1,5 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -20,16 +21,16 @@
         <input type="email" id="email" placeholder="Digite seu email" required>
         <br><br>
 
-        <label for="numero">Telefone:</label>
-        <input type="numero" id="tel" placeholder="Digite seu telefone">
+        <label for="tel">Telefone:</label>
+        <input type="tel" id="tel" placeholder="Digite seu telefone">
         <br><br>
 
-         <label for="idade">Idade</label>
-        <input type="numero" id="age" placeholder="Digite sua idade">
+        <label for="age">Idade</label>
+        <input type="number" id="age" placeholder="Digite sua idade">
         <br><br>
 
         <label for="cpf">CPF:</label>
-        <input type="numero" id="cpf" placeholder="000.000.000-00">
+        <input type="text" id="cpf" placeholder="000.000.000-00">
         <br><br>
 
         <label for="moradia">Moradia:</label>
@@ -40,29 +41,29 @@
         </select>
         <br><br>
 
-        <label for="quintal">Possui Quintal?</label>
+        <label>Possui Quintal?</label>
         <input type="radio" name="quintal" value="sim">Sim
         <input type="radio" name="quintal" value="nao">Não
         <br><br>
 
-        <label for="pet">Já teve um pet?:</label>
-        <select name="pet" id="Já teve um pet">
+        <label for="tevePet">Já teve um pet?:</label>
+        <select name="pet" id="tevePet">
             <option value="">selecione</option>
             <option value="sim">Sim</option>
             <option value="nao">Não</option>
         </select>
         <br><br>
 
-        <label>Quantas horas o animal fica sozinho por dia?</label>
-        <input type="numero" id="horasSo" required>
+        <label for="horasSo">Quantas horas o animal fica sozinho por dia?</label>
+        <input type="number" id="horasSo" required>
         <br><br>
 
-        <label>Motivo da adoção:</label>
-        <textarea id="motivo" placeholder="Porque da adoção"required></textarea>
+        <label for="motivo">Motivo da adoção:</label>
+        <textarea id="motivo" placeholder="Porque da adoção" required></textarea>
         <br><br>
 
         <div style="margin-top: 15px;">
-            <input type="checkbox" id="termo" style="width: auto;"> 
+            <input type="checkbox" id="termo" style="width: auto;" required> 
             <label style="display: inline;" for="termo">Aceito o termo de responsabilidade</label>
         </div>
         <br><br>
