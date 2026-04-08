@@ -9,7 +9,11 @@ document.getElementById("formAdocao").addEventListener("submit", function (e){
     let quintal = document.querySelector('input[name="quintal"]:checked');
     
 
-    if(nome.length < 3) return alert("Nome inválido");
+    if(nome.length < 3){
+    alert("Nome inválido");
+    return 0;   
+    } 
+
     if (idade < 18) {
         alert("Você tem que ter 18 para adotar ou até mais");
         return 0;
@@ -19,6 +23,8 @@ document.getElementById("formAdocao").addEventListener("submit", function (e){
         alert("Este CPF já possui uma solicitação no nosso sistema");
         return 0;
     }
+
+
 
     document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome: "
     + nome;
