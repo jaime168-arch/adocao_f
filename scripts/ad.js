@@ -24,6 +24,19 @@ document.getElementById("formAdocao").addEventListener("submit", function (e){
         return 0;
     }
 
+    if (moradia === "apartamento" && quintal === "sim"){
+        alert("Erro apartamentos não possuem quintal externo")
+        return 0;
+    }
+
+    if (horas > 8){
+        const justifica = prompt("O animal fica mais de 8h sozinho. Como você lida com isso? (Justificativa obrigatória)")
+        if (!justifica || justifica.length < 10){
+            alert ("Adoção bloqueada: por insuficiencia de informação")
+            return 0;
+        }
+    }
+
 
 
     document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome: "
