@@ -49,3 +49,9 @@ textarea {
     transition: border-color 0.3s;
 }
 
+input:focus, select:focus, textarea:focus{
+    outline: none;
+    border-color: #4d6c81;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.2);
+}
+
