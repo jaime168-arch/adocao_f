@@ -71,3 +71,31 @@ input[type="checkbox"]{
     align-items: center;
     gap: 5px;
 }
+
+button {
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+
+}
+
+button:hover {
+    background-color: #219150;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#resultado {
+    margin-top: 20px;
+    text align: center;
+    font-weight: bold;
+}
